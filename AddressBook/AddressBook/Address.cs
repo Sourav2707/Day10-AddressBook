@@ -60,7 +60,25 @@ namespace AddressBook
                 }
             }
         }
-                public void display()               //displaying details of each conatact
+        public void delete(String Fname, String Sname)
+        {
+            Contacts contact = new Contacts();
+            bool found = false;
+            foreach (var person in add_book)
+            {
+                if (person.first_name.Equals(Fname) && person.s_name.Equals(Sname))
+                {
+                    found = true;
+                    add_book.Remove(person);
+                    Console.WriteLine("Contact deleted");
+                }
+            }
+            if (found == false)
+            {
+                Console.WriteLine("Contact not found");
+            }
+        }
+        public void display()               //displaying details of each conatact
         {
             foreach (var data in add_book)
             {
