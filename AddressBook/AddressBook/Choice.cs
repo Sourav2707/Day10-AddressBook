@@ -8,12 +8,12 @@ namespace Addressbook
 {
     internal class CHOICE
     {
-        public static void Choice(int ch)
+        public static void Choice(int ch, addressBook obj)
         {
             int choice = ch;
             if (choice != 5)
             {
-                addressBook obj = new addressBook();
+                //addressBook obj = new addressBook();
                 do
                 {
                     if (choice == 1)

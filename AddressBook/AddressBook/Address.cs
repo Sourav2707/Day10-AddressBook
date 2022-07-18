@@ -10,6 +10,11 @@ namespace Addressbook
     public class addressBook
     {
         List<contact> add_book = new List<contact>();          //created an address book list of contact class type
+        /*        public void addAddressBook(String name)
+                {
+                    Dictionary<string, addressBook> addressbook=new Dictionary<string, addressBook>();
+                    addressbook.Add(name, add_book);
+                }*/
         public void create()
         {
             int ch = 1;                                     //for choice of more contacts adding ....initially adds a contact
